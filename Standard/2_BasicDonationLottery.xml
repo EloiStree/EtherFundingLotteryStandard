@@ -7,7 +7,7 @@
   <entrytype type="oneperaddress" />
   <!-- 1 ETH  (Around 2500€ in 2021-05-28) -->
   <endbyamount weiAmount="1000000000000000000"/>
-  <endbytimeout maxTimeInSeconds=""/>
+  <endbytimeout maxTimeInSeconds="36000"/>
   <winnerhash transactioncount="10"/>
   <funding pourcent="90.0"/>
 </lotteryFundingInitialParameters>
