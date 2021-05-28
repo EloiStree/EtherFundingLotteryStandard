@@ -1,0 +1,3 @@
+https://raw.githubusercontent.com/EloiStree/EtherFundingLotteryStandard/main/Standard/1_BasicLottery.xml
+https://raw.githubusercontent.com/EloiStree/EtherFundingLotteryStandard/main/Standard/2_BasicDonationLottery.xml
+https://raw.githubusercontent.com/EloiStree/EtherFundingLotteryStandard/main/Standard/3_BasicJustLottery.xml
