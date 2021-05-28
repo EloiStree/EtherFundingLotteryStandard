@@ -3,7 +3,7 @@
 Disclaimer: This project is created to help funding people or association. So check with your goverment if lottery are authorized with this one... 
 -->
 <lotteryFundingInitialParameters>
-  <id integerValue="1"/>
+  <id integerValue="3"/>
   <!-- 0.001 ETH  (Around 2.5€ in 2021-05-28) -->
   <minentry weiMinEntry="1000000000000000"/>
   <entrytype type="oneperaddress" />
