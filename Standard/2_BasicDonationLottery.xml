@@ -1,7 +1,7 @@
 <!-- In this lottery the winner win 10 % and the rest go to the association that organize it.
  It is mostly a donation system that reward randomly a donator that a lottery. -->
 <lotteryFundingInitialParameters>
-  <id integerValue="1"/>
+  <id integerValue="2"/>
   <!-- 0.001 ETH  (Around 2.5€ in 2021-05-28) -->
   <minentry weiMinEntry="1000000000000000"/>
   <entrytype type="oneperaddress" />
