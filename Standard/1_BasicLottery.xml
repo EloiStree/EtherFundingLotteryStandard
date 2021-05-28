@@ -4,23 +4,23 @@
   <id integerValue="1"/>
   
   <!-- The minim wei for a participant to participate to the lottery-->
-  <minentry weiMinEntry="0.001"/>
+  <minentry weiMinEntry="1000000000000000"/>
   
   <!-- In the current "dont trust, verifiy" project only the one per addres is implemented.
   
-   Coded: oneperaddress: One address can only have one ticket. I allows to make lottery that are not design to rob participant but that can be "unfair" is there a bot in the pool
-  WIP: oneperentry: One per valide entry allows to make lottery that are "fair" if you have bot or ai participating, but that risky for people that like "gambleing" to much.
-  WIP: oneperentryamount: Convert all the amount the participant put in the lottery and convert it as some tickets. Same that oneperentry but too easy for big gambler 
+  Coded: oneperaddress: One address can only have one ticket. It allows to make lottery that are not design to "rob" participant but that can be "unfair" is there a bot in the pool
+  WIP: oneperentry: One per valide entry allows to make lottery that are "fair" if you have bot or ai participating, but that can be risky for people that like "gambling".
+  WIP: oneperentryamount: Convert all the amount the participant put in the lottery to some tickets. Same that oneperentry but too easy for big gambler.
   -->
   <entrytype type="oneperaddress" />
   
   <!-- The amount that the organized want to reach. As soon as the amount is reach. The lottery is finished -->
-  <endbyamount weiAmount=""/>
+  <endbyamount weiAmount="1000000000000000000"/>
   
-  <!-- Starting from the transaction Timestamp on Ethereum. How many seconds the lottery can exist. If the amount is not reach, this time design of who is the winner. -->
+  <!-- Starting from the transaction Timestamp on Ethereum. How many seconds the lottery can exist. If the amount is not reach, this time design when we compute the winner. -->
   <endbytimeout maxTimeInSeconds=""/>
 
-  <!-- The number of transaction you want to use to hash randomly the winner from past to the last transaction at the end condition. -->
+  <!-- The number of transactions you want to use to hash randomly the winner from past to the last transaction at the end condition. -->
   <winnerhash transactioncount="10"/>
 
   <!-- The pourcent of the amount that will be send to the funding cause of this lottery. -->
