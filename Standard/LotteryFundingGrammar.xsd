@@ -1,0 +1,96 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lotteryFundingInitialParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id">
+          <xs:annotation>
+            <xs:documentation>Represent the id on the official data based of this lottery initial parameters</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:byte" name="integerValue"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="minentry">
+          <xs:annotation>
+            <xs:documentation>The minim wei for a participant to participate to the lottery</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:float" name="weiMinEntry"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="entrytype">
+          <xs:annotation>
+            <xs:documentation>In the current "dont trust, verifiy" project only the one per addres is implemented.
+  
+   Coded: oneperaddress: One address can only have one ticket. I allows to make lottery that are not design to rob participant but that can be "unfair" is there a bot in the pool
+  WIP: oneperentry: One per valide entry allows to make lottery that are "fair" if you have bot or ai participating, but that risky for people that like "gambleing" to much.
+  WIP: oneperentryamount: Convert all the amount the participant put in the lottery and convert it as some tickets. Same that oneperentry but too easy for big gambler</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="type"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="endbyamount">
+          <xs:annotation>
+            <xs:documentation>The amount that the organized want to reach. As soon as the amount is reach. The lottery is finished</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="weiAmount"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="endbytimeout">
+          <xs:annotation>
+            <xs:documentation>Starting from the transaction Timestamp on Ethereum. How many seconds the lottery can exist. If the amount is not reach, this time design of who is the winner.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="maxTimeInSeconds"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="winnerhash">
+          <xs:annotation>
+            <xs:documentation>The number of transaction you want to use to hash randomly the winner from past to the last transaction at the end condition.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:byte" name="transactioncount"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="funding">
+          <xs:annotation>
+            <xs:documentation>The pourcent of the amount that will be send to the funding cause of this lottery.</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:float" name="pourcent"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
