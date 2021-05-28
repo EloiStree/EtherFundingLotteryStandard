@@ -1,0 +1,15 @@
+  
+<!-- In this lottery the winner win 99 % and 1% go to the funding for helping on the gaz cost.
+Disclaimer: This project is created to help funding people or association. So check with your goverment if lottery are authorized with this one... 
+-->
+<lotteryFundingInitialParameters>
+  <id integerValue="1"/>
+  <!-- 0.001 ETH  (Around 2.5€ in 2021-05-28) -->
+  <minentry weiMinEntry="1000000000000000"/>
+  <entrytype type="oneperaddress" />
+  <!-- 1 ETH  (Around 2500€ in 2021-05-28) -->
+  <endbyamount weiAmount="1000000000000000000"/>
+  <endbytimeout maxTimeInSeconds=""/>
+  <winnerhash transactioncount="10"/>
+  <funding pourcent="1.0"/>
+</lotteryFundingInitialParameters>
