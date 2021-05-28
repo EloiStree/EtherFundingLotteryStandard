@@ -18,7 +18,7 @@
   <endbyamount weiAmount="1000000000000000000"/>
   
   <!-- Starting from the transaction Timestamp on Ethereum. How many seconds the lottery can exist. If the amount is not reach, this time design when we compute the winner. -->
-  <endbytimeout maxTimeInSeconds=""/>
+  <endbytimeout maxTimeInDays="30"/>
 
   <!-- The number of transactions you want to use to hash randomly the winner from past to the last transaction at the end condition. -->
   <winnerhash transactioncount="10"/>
